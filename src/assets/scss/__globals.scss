@@ -1,0 +1,55 @@
+@use 'sass:math';
+body {
+    font-family: Gilroy, serif;
+}
+ //Buttons
+.btn {
+    padding: 12px 22px;
+    font-style: normal;
+    background-color: $primary;
+}
+.btn_primary {
+    padding: 8px 12px;
+    color: #fff;
+    border-radius: 4px;
+    gap: 10px;
+     &:hover {
+         background: darken($primary, 20%);
+         transition: .3s ease-out ;
+     }
+}
+.btn_secondary {
+    padding: 8px 12px;
+    background: rgba(44, 130, 253, 0.15);
+    border-radius: 4px;
+    text-decoration: none;
+    color: $primary;
+    &:hover {
+        background: lighten(rgba(44, 130, 253, 0.15), 50%);
+        transition: .3s ease-out ;
+    }
+}
+
+//Container
+$container: 1440 + px;
+.container {
+    max-width: $container ;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    @media (max-width:$breakpoint1200) {
+        max-width: 1170px;
+    }
+    @media (max-width:$breakpoint992) {
+        max-width: 992px;
+    }
+    @media (max-width:$breakpoint768) {
+        max-width: 768px;
+    }
+    @media (max-width:$breakpoint480) {
+        max-width: 480px;
+    }
+}
+
+

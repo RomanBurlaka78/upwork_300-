@@ -1,0 +1,34 @@
+@import "__vars";
+@import "__globals";
+@import "vendor/reset";
+@import "blocks/navbar";
+
+*, 
+:before,:after {
+box-sizing: border-box;
+font-family: 'Gilroy', sans-serif;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    
+    @media (max-width:992px) {
+        max-width: 978px;
+        
+    }
+
+    @media (max-width:768px) {
+        max-width: 750px;
+        
+    }
+    
+    @media (max-width:348px) {
+        // max-width: none;
+        // padding: 0 10px;
+        
+    }
+}
+
+
+
+
